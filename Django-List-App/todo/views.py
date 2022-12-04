@@ -1,3 +1,6 @@
+"""
+Created: November 18, 2022
+"""
 from django.shortcuts import render, redirect
 from django.views.decorators.http import require_POST
 

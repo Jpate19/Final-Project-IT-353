@@ -1,3 +1,6 @@
+"""
+Created: November 18, 2022
+"""
 from django.urls import path
 
 from . import views

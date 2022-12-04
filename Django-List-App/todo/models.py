@@ -1,3 +1,6 @@
+"""
+Created: November 18, 2022
+"""
 from django.db import models
 
 class Todo(models.Model):
