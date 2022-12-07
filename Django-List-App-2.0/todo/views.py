@@ -35,7 +35,8 @@ def addTodo(request):
 
     if form.is_valid():
         new_todo = Todo(text=request.POST['text'])
-        new_todo.save()
+        new_todo.save()  
+
 
     return redirect('index')
 

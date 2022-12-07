@@ -6,12 +6,11 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('', include('django.contrib.auth.urls')),
     path('add/', views.addTodo, name='add'),
     path('complete/<todo_id>/', views.completeTodo, name='complete'),
     path('deletecomplete/', views.deleteCompleted, name='deletecomplete'),
     path('deleteall/', views.deleteAll, name='deleteall'),
-    path('accounts/profile/',include('django.contrib.auth.urls')),
+    path('accounts/',include('django.contrib.auth.urls')),
     # path('register/success/',TemplateView.as_view(template_name="registration/success.html"), name = 'register-success'),
     path('register/', Register.as_view(), name = 'register'),  
 ]
